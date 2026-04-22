@@ -4,78 +4,269 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Mahalakshmi | Portfolio</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{--primary:#22d3ee;--secondary:#a78bfa;--bg:#020617;--card:#0f172a;--text:#e2e8f0;}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:radial-gradient(circle at top,#0f172a,#020617);color:var(--text);overflow-x:hidden;}
-nav{position:fixed;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 60px;background:rgba(0,0,0,0.6);backdrop-filter:blur(15px);z-index:1000;transition:.3s}
-nav.shrink{padding:10px 60px;background:rgba(0,0,0,0.9)}
+
+body{
+background:radial-gradient(circle at top,#0f172a,#020617);
+color:var(--text);
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(15px);
+z-index:1000;
+transition:.3s;
+}
+
 nav h1{color:var(--primary)}
-nav a{margin-left:25px;color:#94a3b8;text-decoration:none}
+
+nav a{
+margin-left:25px;
+color:#94a3b8;
+text-decoration:none;
+}
 nav a:hover{color:white}
 
-.hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;align-items:center;padding:120px 60px;gap:40px}
+/* HERO */
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+min-height:100vh;
+align-items:center;
+padding:120px 60px;
+gap:40px;
+}
+
+.hero-text{
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
 .hero-text h1{font-size:3.5rem;line-height:1.2}
-.hero-text span{background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;color:transparent}
-.hero-text p{margin-top:20px;color:#94a3b8;line-height:1.8}
-.hero-box img{width:100%;border-radius:20px;transform:scale(0.9);opacity:0;animation:fadeIn 1.5s ease forwards;}
 
-.btn{padding:14px 26px;border-radius:10px;border:none;margin-top:20px;cursor:pointer;transition:.3s}
-.primary{background:linear-gradient(90deg,var(--primary),var(--secondary));color:black}
-.secondary{background:none;border:1px solid #555;color:#aaa;margin-left:10px}
-.btn:hover{transform:translateY(-3px) scale(1.05)}
+.hero-text span{
+background:linear-gradient(90deg,var(--primary),var(--secondary));
+-webkit-background-clip:text;
+color:transparent;
+}
 
-.section{padding:100px 60px;opacity:0;transform:translateY(50px);transition:1s}
-.section.show{opacity:1;transform:translateY(0)}
-.section h2{text-align:center;font-size:2.3rem;margin-bottom:20px}
-.section p{text-align:center;max-width:900px;margin:auto;color:#94a3b8;line-height:1.9}
+.hero-text p{
+margin-top:20px;
+color:#94a3b8;
+line-height:1.8;
+}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-top:40px}
-.card{background:var(--card);padding:25px;border-radius:15px;transition:.4s;position:relative;overflow:hidden}
-.card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 20px 40px rgba(0,0,0,0.6)}
-.card img{width:100%;border-radius:10px;margin-bottom:15px}
+.hero-box{
+display:flex;
+justify-content:center;
+}
 
-.process{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:30px}
-.step{background:var(--card);padding:20px;border-radius:15px;transition:.3s}
-.step:hover{transform:translateY(-8px)}
+.hero-box img{
+width:100%;
+max-width:500px;
+border-radius:20px;
+}
 
-.process .step:last-child{
-grid-column:1 / -1;
-max-width:400px;
-margin:auto;
+/* BUTTON */
+.btn{
+padding:14px 26px;
+border-radius:10px;
+border:none;
+margin-top:20px;
+cursor:pointer;
+transition:.3s;
+}
+
+.primary{
+background:linear-gradient(90deg,var(--primary),var(--secondary));
+color:black;
+}
+
+.secondary{
+background:none;
+border:1px solid #555;
+color:#aaa;
+margin-left:10px;
+}
+
+.btn:hover{
+transform:translateY(-3px) scale(1.05);
+}
+
+/* SECTION */
+.section{
+padding:100px 60px;
+opacity:0;
+transform:translateY(50px);
+transition:1s;
 text-align:center;
 }
 
-.contact-box{margin-top:30px;padding:30px;background:var(--card);border-radius:15px;text-align:center}
+.section.show{
+opacity:1;
+transform:translateY(0);
+}
 
-footer{text-align:center;padding:30px;color:#64748b}
+.section h2{
+font-size:2.3rem;
+margin-bottom:20px;
+}
+
+.section p{
+max-width:900px;
+margin:auto;
+color:#94a3b8;
+line-height:1.9;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+/* CARD */
+.card{
+background:var(--card);
+padding:25px;
+border-radius:15px;
+transition:.4s;
+display:flex;
+flex-direction:column;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* PROCESS */
+.process{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.step{
+background:var(--card);
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.process .step:last-child{
+grid-column:1/-1;
+max-width:400px;
+margin:auto;
+}
+
+/* CONTACT */
+.contact-box{
+margin-top:30px;
+padding:30px;
+background:var(--card);
+border-radius:15px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+color:#64748b;
+}
 
 .linkedin-btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
 margin-left:15px;
 padding:10px 16px;
 border-radius:8px;
-background:transparent;
 border:1px solid rgba(167,139,250,0.4);
 color:#a78bfa;
 text-decoration:none;
-font-size:14px;
-font-weight:500;
 transition:.3s;
 }
+
 .linkedin-btn:hover{
 background:linear-gradient(90deg,#22d3ee,#a78bfa);
 color:black;
-border:none;
-transform:translateY(-2px);
 }
 
-@keyframes fadeIn{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}
-@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.hero-text{text-align:center}}
+/* RESPONSIVE */
+
+/* TABLET */
+@media(max-width:900px){
+nav{
+flex-direction:column;
+gap:10px;
+padding:15px;
+text-align:center;
+}
+
+nav div{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+padding:100px 30px;
+}
+
+.hero-text{
+align-items:center;
+}
+
+.hero-text h1{
+font-size:2.5rem;
+}
+
+.section{
+padding:80px 30px;
+}
+}
+
+/* MOBILE */
+@media(max-width:500px){
+.hero-text h1{
+font-size:2rem;
+}
+
+.btn{
+width:100%;
+}
+
+.contact-box{
+flex-direction:column;
+}
+}
 </style>
 </head>
 
@@ -95,11 +286,13 @@ transform:translateY(-2px);
 <div class="hero-text">
 <h1>I Build <span>Scalable Web Solutions</span> for Real Business Growth</h1>
 <p>I am a Full Stack Software Engineer focused on designing and developing high-performance web applications that are built for real-world impact. My work is not just about writing code — it is about understanding business problems, designing efficient solutions, and delivering products that improve user experience, increase engagement, and support long-term scalability.</p>
+
 <button class="btn primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Project</button>
 <button class="btn secondary" onclick="window.location.href='mailto:1476mahalakshmi@gmail.com'">Email</button>
 </div>
+
 <div class="hero-box">
-<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="portfolio"/>
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
 </div>
 </section>
 
@@ -135,30 +328,41 @@ I work with businesses and individuals to transform ideas into fully functional 
 <section id="projects" class="section">
 <h2>Projects</h2>
 <div class="grid">
+
 <div class="card">
-<img src="https://github.com/TM1476/my_portfolio/blob/4d8024038713a37d81c1e2a39a95a4968a956010/agri-fin-pro.png" />
+<img src="https://raw.githubusercontent.com/TM1476/my_portfolio/main/agri-fin-pro.png">
 <h3>AgriFin AI</h3>
 <p>An AI-powered fintech platform designed to analyze financial data and provide intelligent credit scoring solutions for real-world use cases.</p>
-<a href="https://agrifin-cffd.onrender.com/" target="_blank"><button class="btn primary">View</button></a>
+<a href="https://agrifin-cffd.onrender.com/" target="_blank">
+<button class="btn primary">View</button>
+</a>
 </div>
+
 <div class="card">
-<img src="https://github.com/TM1476/my_portfolio/blob/d84e7ddc6a938be3ab6d976ff3f8ab3129cb58a6/code-risk.png" />
+<img src="https://raw.githubusercontent.com/TM1476/my_portfolio/main/code-risk.png">
 <h3>Code Risk Predictor</h3>
 <p>A machine learning-based system that evaluates code quality and predicts potential risks, helping developers improve software reliability.</p>
-<a href="https://zero-touch-pipeline.onrender.com/" target="_blank"><button class="btn primary">View</button></a>
+<a href="https://zero-touch-pipeline.onrender.com/" target="_blank">
+<button class="btn primary">View</button>
+</a>
 </div>
+
 <div class="card">
-<img src="https://github.com/TM1476/my_portfolio/blob/7533307bf5444b674b6dbec05e081c2948064248/fin-cal-pro.png" />
+<img src="https://raw.githubusercontent.com/TM1476/my_portfolio/main/fin-cal-pro.png">
 <h3>Finance Calculator</h3>
 <p>An interactive financial tool that helps users visualize investment growth and make informed financial decisions.</p>
-<a href="https://interest-calculator-blond.vercel.app/" target="_blank"><button class="btn primary">View</button></a>
+<a href="https://interest-calculator-blond.vercel.app/" target="_blank">
+<button class="btn primary">View</button>
+</a>
 </div>
+
 </div>
 </section>
 
 <section id="contact" class="section">
 <h2>Contact</h2>
 <p>If you are looking to build a professional website or web application that is scalable, efficient, and aligned with your business goals, I would be happy to work with you and bring your ideas to life.</p>
+
 <div class="contact-box">
 <button class="btn primary" onclick="window.location.href='tel:9345390797'">Call</button>
 <button class="btn primary" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=1476mahalakshmi@gmail.com')">Email</button>
@@ -172,9 +376,19 @@ I work with businesses and individuals to transform ideas into fully functional 
 
 <script>
 const sections=document.querySelectorAll('.section');
+
 window.addEventListener('scroll',()=>{
-sections.forEach(sec=>{if(sec.getBoundingClientRect().top<window.innerHeight-100){sec.classList.add('show')}});
-if(window.scrollY>50){document.getElementById('nav').classList.add('shrink')}else{document.getElementById('nav').classList.remove('shrink')}
+sections.forEach(sec=>{
+if(sec.getBoundingClientRect().top<window.innerHeight-100){
+sec.classList.add('show')
+}
+});
+
+if(window.scrollY>50){
+document.getElementById('nav').classList.add('shrink')
+}else{
+document.getElementById('nav').classList.remove('shrink')
+}
 });
 </script>
 
