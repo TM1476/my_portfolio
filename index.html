@@ -129,36 +129,19 @@ box-shadow:0 20px 40px rgba(0,0,0,0.6)
 /* PROCESS (🔥 FIXED ALIGNMENT) */
 .process{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-margin-top:40px;
-justify-items:center;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:30px;
+justify-items:center; /* important */
 }
 
 .step{
 background:var(--card);
-padding:25px;
-border-radius:18px;
+padding:20px;
+border-radius:15px;
 text-align:center;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-
 width:100%;
-max-width:280px;
-min-height:220px;
-}
-
-/* center 4 & 5 */
-.process .step:nth-child(4){
-grid-column:1 / 2;
-justify-self:end;
-}
-
-.process .step:nth-child(5){
-grid-column:3 / 4;
-justify-self:start;
+max-width:300px;
 }
 
 /* CONTACT */
