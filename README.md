@@ -75,8 +75,11 @@ All my real-time projects are available on my portfolio website:
 If you want a professional website for your business, feel free to contact me:
 
 📱 Phone: 9345390797
+
 📧 Email: 1476mahalakshmi@gmail.com
+
 🔗 LinkedIn: https://www.linkedin.com/in/mahalakshmi-kamaraj-005809290/
+
 🌍 Live Portfolio
 
 #### 🔗 Visit Now:
