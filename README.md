@@ -1,14 +1,14 @@
-💼 Mahalakshmi | Freelance Web Developer Portfolio
+# 💼 Mahalakshmi | Freelance Web Developer Portfolio #
 
-🌐 Live Website: https://my-portfolio-hgaj.onrender.com
+## 🌐 Live Website: https://my-portfolio-hgaj.onrender.com ##
 
-🚀 About Me
+### 🚀 About Me ###
 
 I am a Full Stack Web Developer specializing in building modern, responsive, and high-performance websites for businesses, startups, and personal brands.
 
 I focus on transforming ideas into real, scalable digital products that help businesses grow online, improve user engagement, and establish a strong digital presence.
 
-🎯 What I Offer (Freelancing Services)
+### 🎯 What I Offer (Freelancing Services) ###
 
 ✔ Business Websites
 ✔ Portfolio Websites
@@ -20,31 +20,31 @@ I focus on transforming ideas into real, scalable digital products that help bus
 ✔ Firebase Integration (Database + Authentication)
 ✔ SEO Optimization for better ranking
 
-🧠 My Working Approach
+### 🧠 My Working Approach ###
 
 I follow a structured and professional development process:
 
-1. Requirement Analysis
+#### 1. Requirement Analysis ####
 
 Understanding client goals, business needs, and target audience.
 
-2. Planning & Design
+#### 2. Planning & Design ####
 
 Creating structured UI/UX flow and scalable architecture.
 
-3. Development
+#### 3. Development ####
 
 Building fast, secure, and responsive applications using modern technologies.
 
-4. Optimization
+#### 4. Optimization ####
 
 Improving performance, SEO, and user experience.
 
-5. Deployment & Support
+#### 5. Deployment & Support ####
 
 Hosting the website and providing continuous support if needed.
 
-💡 Why Choose Me?
+### 💡 Why Choose Me? ###
 
 ✔ Clean & professional code structure
 ✔ Mobile-first responsive design
@@ -54,7 +54,8 @@ Hosting the website and providing continuous support if needed.
 ✔ On-time delivery
 ✔ Full project ownership support
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack ###
+
 HTML5
 CSS3 (Flexbox + Grid)
 JavaScript
@@ -63,12 +64,13 @@ Node.js
 Python (Backend)
 Firebase (Database & Authentication)
 SEO Optimization
-📂 Projects
+
+### 📂 Projects ###
 
 All my real-time projects are available on my portfolio website:
 👉 https://my-portfolio-hgaj.onrender.com
 
-📞 Contact Me for Freelance Work
+#### 📞 Contact Me for Freelance Work ####
 
 If you want a professional website for your business, feel free to contact me:
 
@@ -77,9 +79,9 @@ If you want a professional website for your business, feel free to contact me:
 🔗 LinkedIn: https://www.linkedin.com/in/mahalakshmi-kamaraj-005809290/
 🌍 Live Portfolio
 
-🔗 Visit Now:
+#### 🔗 Visit Now:
 👉 https://my-portfolio-hgaj.onrender.com
 
-⚡ Note for Clients
+#### ⚡ Note for Clients
 
 I don’t just build websites — I build digital experiences that help your business grow online.
